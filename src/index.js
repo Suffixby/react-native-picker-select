@@ -318,6 +318,7 @@ export default class RNPickerSelect extends PureComponent {
             <View pointerEvents="box-only" style={style.inputIOSContainer}>
                 <TextInput
                     style={[
+                        fontSize: 24,
                         !hideIcon ? { paddingRight: 30 } : {},
                         style.inputIOS,
                         this.getPlaceholderStyle(),
@@ -404,6 +405,7 @@ export default class RNPickerSelect extends PureComponent {
             <View style={[defaultStyles.viewContainer, style.viewContainer]}>
                 <Picker
                     style={[
+                        fontSize: 24,
                         hideIcon ? { backgroundColor: 'transparent' } : {},
                         style.inputAndroid,
                         this.getPlaceholderStyle(),

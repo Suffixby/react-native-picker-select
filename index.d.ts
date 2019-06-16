@@ -16,16 +16,19 @@ declare module 'react-native-picker-select' {
         itemKey?: string | number;
         style?: object;
         children?: any;
-        hideIcon?: boolean;
         placeholderTextColor?: string;
+        useNativeAndroidPickerStyle?: boolean;
         hideDoneBar?: boolean;
         doneText?: string;
         onDonePress?: () => void;
         onUpArrow?: () => void;
         onDownArrow?: () => void;
+        onOpen?: () => void;
+        onClose?: () => void;
         modalProps?: object;
         textInputProps?: object;
         pickerProps?: object;
+        Icon?: React.ReactNode;
     }
     class Picker extends React.Component<PickerProps> {}
     export default Picker;
